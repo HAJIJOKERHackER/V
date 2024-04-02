@@ -321,7 +321,7 @@ P = '\033[96;1m'
 C = '\033[95;1m'
 N = '\x1b[0m'      
 #____________________Menu____________________#
-def menu():
+def Main():
         global lim,tp
         try:
                 clear()
@@ -353,7 +353,7 @@ def menu():
                                 
                         else:
                                 runtxt('\033[1;91m [+] OPTION NOT FOUND IN MENU...');time.sleep(1)
-                                menu() 
+                                Main() 
                 else:
                         runtxt(' [+] Will be back soon')
 
@@ -379,7 +379,7 @@ def mirwais001():
                                 elif x in ['3','03']:
                                         bdawm()                                           
                                 else:
-                                        menu()
+                                        Main()
 def mirwais002():
                                 clear()
                                 print(' [1] Pakistan Cloning\n [2] Afghanistan Cloning \n [3] Bangladesh Cloning\n [0] Back menu')
@@ -392,7 +392,7 @@ def mirwais002():
                                 elif x in ['3','03']:
                                         bdgraph2()
                                 else:
-                                        menu()
+                                        Main()
 #____________________File-Method____________________#
 
 def file_cloning():
@@ -406,7 +406,7 @@ def file_cloning():
                                 except FileNotFoundError:
                                         print(' [◇] File location not found ')
                                         time.sleep(1)
-                                        menu()
+                                        Main()
                                 clear()
                                 print(' Try all methods  ')
                                 print('\033[1;97m ==================================================')
@@ -486,7 +486,7 @@ def file_cloning():
                                 print('\033[1;92m [+]==================================================')
                                 input(' [+] Press enter to back ')
                                 os.system('python V.py')
-                                menu() 
+                                Main() 
                                 
 #____________________Random-Number-Gmail-Method____________________#
 def pak():
@@ -519,7 +519,7 @@ def pak():
                 print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
-                menu() 
+                Main() 
 
 def afgan():
 
@@ -558,7 +558,7 @@ def afgan():
                 print('\033[1;92m [+]==================================================')
                 input(' [+]Press enter to back ')
                 os.system('python V.py')
-                menu() 
+                Main() 
 
 def bd():
                 user=[]
@@ -594,7 +594,7 @@ def bd():
                 print('\033[1;92m [+]==================================================')
                 input(' [+] Press enter to back ')
                 os.system('python V.py')
-                menu() 
+                Main() 
               
 
 def afghangraph2():
@@ -635,7 +635,7 @@ def afghangraph2():
                 print('\033[1;92m [+]==================================================')
                 input(' [+]Press enter to back ')
                 os.system('python V.py')
-                menu()                 
+                Main()                 
 
 def bdgraph2():
                 user=[]
@@ -671,7 +671,7 @@ def bdgraph2():
                 print('\033[1;97m [+]==================================================')
                 input(' [+] Press enter to back ')
                 os.system('python V.py')
-                menu() 
+                Main() 
 
 #____________________Ua-String-Tools____________________#
 def ua_api():
@@ -940,7 +940,7 @@ def danish():
         print(zahid)
 
 
-def F5_menu():
+def F5_Main():
 		clear()
 		print('\033[1;39m[◇]======================================================')
 		print(' [1] 2004-2005 𝐂𝐋𝐎𝐍𝐈𝐍𝐆\n [2] 2006-2007 𝐂𝐋𝐎𝐍𝐈𝐍𝐆\n [3] 2007-2008 𝐂𝐋𝐎𝐍𝐈𝐍𝐆 \n [4] 2009-2010 𝐂𝐋𝐎𝐍𝐈𝐍𝐆\n [0] 𝐄𝐗𝐈𝐓 𝐌𝐄𝐍𝐔 ')
@@ -959,7 +959,7 @@ def F5_menu():
 		else:
 			print('  Option not found in menu...');time.sleep(1)
 			os.system('python V.py')
-			menu() 
+			Main() 
 			
 def mirwais005():           
                                 danish()
@@ -967,16 +967,16 @@ def mirwais005():
                                 print('\033[1;97m [◇]==================================================')
                                 x=input(' [◇] Choose: ')
                                 if x in ['1','01']:
-                                        menu()
+                                        Main()
                                 if x in ['2','02']:
                                         os.system('git pull')
-                                        main_menu()
+                                        main_Main()
                                 elif x in ['3','03']:
                                         AWM()
                                 elif x in ['4','04']:
-                                        F5_menu()
+                                        F5_Main()
                                 elif x in ['5','05']:
-                                        creatmenu()
+                                        creatMain()
                                 elif x in ['6','06']:
                                         clear()
                                         print('\033[1;93m [◇] Add Next Update ....');time.sleep(3)
@@ -1000,4 +1000,4 @@ def contact():
                                         mirwais005()       
                                 else:
                                         mirwais005()
-menu():      
+Main()
