@@ -1000,4 +1000,4 @@ def contact():
                                         mirwais005()       
                                 else:
                                         mirwais005()
-menu()
+menu():      
